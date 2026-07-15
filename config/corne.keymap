@@ -12,17 +12,11 @@
 #define M_END LG(RIGHT)
 
 / {
-    chosen {
-        zmk,matrix_transform = &default_transform;
-        // zmk,matrix_transform = &five_column_transform;
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
         QWER {
+            display-name = "QWR";
             bindings = <
                 &kp ESC           &kp Q            &kp W      &kp E      &kp R      &kp T            &kp Y      &kp U          &kp I      &kp O      &kp P      &kp NUBS
                 &kp LCTRL         &kp A            &kp S      &kp D      &kp F      &kp G            &kp H      &kp J          &kp K      &kp L      &kp SEMI   &kp SQT
@@ -31,6 +25,7 @@
             >;
         };
         MAC {
+            display-name = "MAC";
             bindings = <
                 &kp ESC           &kp Q            &kp W      &kp E      &kp R      &kp T            &kp Y      &kp U          &kp I      &kp O      &kp P      &kp NUBS
                 &kp LCTRL         &kp A            &kp S      &kp D      &kp F      &kp G            &kp H      &kp J          &kp K      &kp L      &kp SEMI   &kp SQT
@@ -39,6 +34,7 @@
             >;
         };
         NUM {
+            display-name = "NUM";
             bindings = <
                 &bt BT_CLR_ALL    &bt BT_SEL 0     &kp N7     &kp N8     &kp N9     &kp DEL          &none      &kp F9         &kp F10    &kp F11    &kp F12    &kp NUBS
                 &kp LCTRL         &bt BT_SEL 1     &kp N4     &kp N5     &kp N6     &kp INS          &none      &kp F5         &kp F6     &kp F7     &kp F8     &kp SQT
@@ -47,6 +43,7 @@
             >;
         };
         SYM {
+            display-name = "SYM";
             bindings = <
                 &kp TAB           &kp GRAVE        &none      &kp LBKT   &kp RBKT    &none           &none      &kp HOME       &kp UP     &kp END    &none     &kp NUBS
                 &kp LCTRL         &kp MINUS        &kp EQUAL  &kp LPAR   &kp RPAR    &none           &none      &kp LEFT       &kp DOWN   &kp RIGHT  &kp RET   &kp DEL
@@ -55,6 +52,7 @@
             >;
         };
         MNUM {
+            display-name = "MNUM";
             bindings = <
                 &bt BT_CLR_ALL    &bt BT_SEL 0     &kp N7     &kp N8     &kp N9     &kp DEL          &none      &kp F9         &kp F10    &kp F11    &kp F12    &kp NUBS
                 &kp LCTRL         &bt BT_SEL 1     &kp N4     &kp N5     &kp N6     &kp INS          &none      &kp F5         &kp F6     &kp F7     &kp F8     &kp SQT
@@ -63,6 +61,7 @@
             >;
         };
         MSYM {
+            display-name = "MSYM";
             bindings = <
                 &kp TAB           &kp GRAVE        &none      &kp LBKT   &kp RBKT    &none           &none      &kp M_HOME     &kp UP     &kp M_END  &none     &kp NUBS
                 &kp LCTRL         &kp MINUS        &kp EQUAL  &kp LPAR   &kp RPAR    &none           &none      &kp LEFT       &kp DOWN   &kp RIGHT  &kp RET   &kp DEL
